@@ -27,6 +27,7 @@ public class DisplayRifleSpecialAction extends Action{
 		// TODO Auto-generated method stub
 		chooseAction.add(new RifleAimAction(target,rifle));
 		chooseAction.add(new RifleAttackAction(target,rifle, ammo));
+		//chooseAction.add(new HumanAttackAction(target,rifle, ammo));
 		Action action = submenu.showMenu(actor, chooseAction, display);
 		return action.execute(actor, map);
 	}

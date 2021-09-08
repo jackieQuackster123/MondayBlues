@@ -13,7 +13,7 @@ public class SniperRifle extends RangedWeapon{
 	
 	private int aiming=0;
 	private Actor actorTarget=null;
-	private int damage=damage();
+	private int damage=super.damage();
 	
 	/**
 	 * Name of the weapon is SniperRifle and the displayChar is }
@@ -62,7 +62,7 @@ public class SniperRifle extends RangedWeapon{
 			return damage*2;
 			}
 		else {
-			return 100;}
+			return 1000;}
 	}
 	
 	/**

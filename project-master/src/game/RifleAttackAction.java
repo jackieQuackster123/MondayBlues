@@ -48,7 +48,7 @@ public class RifleAttackAction extends AttackAction{
 			result+=attack.execute(actor,map,rifle, 0.9);
 		}
 		else {
-			result+=attack.execute(actor,map,rifle, 1);
+			result+=attack.execute(actor,map,rifle, 1.0);
 		}
 		
 		((SniperRifle)rifle).reset();
